@@ -6,7 +6,7 @@
 */
 
 :root {
-	--main_bg: rgb(48, 48, 48);
+	--main_bg: rgb(24, 35, 49);
 	--text_col: white;
 
 	--tech_tree_bg: rgb(24, 35, 49);
@@ -86,8 +86,8 @@ blockquote {
 	border-bottom: 4px transparent solid;
 	border-radius: 5px;
 	cursor: pointer;
-	-webkit-filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
-	filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+	/* -webkit-filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+	filter: drop-shadow(0px 0px 5px rgb(0, 0, 0)); */
 }
 
 .classIconContainer input:checked~svg {
@@ -144,14 +144,14 @@ blockquote {
 }
 
 body {
-	font-family: 'Arial';
+	font-family: 'PT Sans', sans-serif;
 	background-color: var(--tech_tree_bg);
 	color: var(--text_col);
 }
 
 .type_researchable,
-.type_reserve,
-.type_event {
+.type_event,
+.type_reserve {
 	background-image: url("https://i.imgur.com/05C2lCi.png");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -165,6 +165,12 @@ body {
 
 .type_squadron {
 	background-image: url("https://i.imgur.com/o2zXWvC.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.type_event_alt_bg {
+	background-image: url("https://i.imgur.com/vf7xLnN.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -293,13 +299,15 @@ a {
 	text-shadow: 0px 0px 11px #000000;
 	max-width: 140px;
 	position: absolute;
-	top: 0px;
-	left: 4px;
+	top: 3px;
+	font-size: 1rem;
+	/* white-space: nowrap;
+  	overflow: hidden; */
 }
 
 .faithful .vehicleName {
 	left: initial;
-	right: 4px;
+	right: 7px;
 	text-align: right;
 }
 
@@ -307,25 +315,26 @@ a {
 	z-index: 1;
 	text-shadow: 0px 0px 11px #000000;
 	position: absolute;
-	bottom: 1px;
+	bottom: 6px;
 	right: 2px;
+	color: #c0c0c0;
 }
 
 .faithful .vehicleBr {
-	right: 30px;
+	right: 21px;
 }
 
 .folderNumber {
 	position: absolute;
-	top: -1px;
-	right: -1px;
+	top: -3px;
+	right: 0px;
 	border: none;
 	background: url("https://i.imgur.com/pqSKFUk.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: right;
-	width: 30px;
-	height: 30px;
+	width: 152px;
+	height: 6px;
 }
 
 .faithful .folderNumber {
@@ -351,8 +360,8 @@ a {
 	bottom: 19px;
 	right: 3px;
 	z-index: 1;
-	-webkit-filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
-	filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+	/* -webkit-filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+	filter: drop-shadow(0px 0px 5px rgb(0, 0, 0)); */
 }
 
 .faithful .vehicleBadge svg {
@@ -385,15 +394,24 @@ nav {
 nav div {
 	background-color: rgb(5, 35, 36);
 	padding: 3px;
-	border-radius: 0 5px 5px 0;
-	border: 1px solid black;
+	/* border: 1px solid white; */
 	border-left: none;
 	cursor: pointer;
 	text-align: center;
 }
 
+table {
+	border: 0;
+}
+
 nav div:nth-child(odd) {
 	background-color: rgb(38, 74, 75);
+}
+
+nav div:hover {
+	background-color: white;
+	color: rgb(5, 35, 36);
+	transition-duration: 0.4s;
 }
 
 .lineArrow {
@@ -410,7 +428,7 @@ nav div:nth-child(odd) {
 	background-color: rgb(98, 129, 130);
 	height: 100%;
 	padding-bottom: 11.4px;
-	margin: auto;
+	margin: 8px auto auto auto;
 }
 
 .rankNumber {
@@ -515,13 +533,16 @@ nav div:nth-child(odd) {
 
 .carpet {
 	position: absolute;
-	top: 0px;
+	top: 0;
+	bottom: 8px;
 	left: 0px;
-	width: calc(100% - 22px);
-	height: calc(100% - 32px);
-	margin: 16px 11px;
-	background-color: rgb(62, 77, 85);
-	border-radius: 3px;
+	width: calc(100% - 20px);
+	height: calc(100% - 30px);
+	padding: 5px;
+	margin: 9px 5px;
+	background-color: rgb(24, 35, 49);
+	/* border-radius: 3px; */
+	outline: 3px solid white;
 }
 
 .folderTooltipText .lineArrow,

@@ -19,79 +19,79 @@
 		{
 			id: 'lt',
 			name: 'Light Tank',
-			shapes: [ { type: 'rect', height: '9', width: '21', y: '3', x: '0', fill: '#ffeeee' } ]
+			shapes: [ { type: 'rect', height: '3', width: '9.6', y: '3', x: '7', fill: '#ffeeee' } ]
 		},
 		{
 			id: 'mt',
 			name: 'Medium Tank',
 			shapes: [
-				{ type: 'rect', height: '9', width: '21', y: '3', x: '0', fill: '#ffaaaa' },
-				{ type: 'rect', height: '4', width: '6', y: '11', x: '0', fill: '#ffaaaa' },
-				{ type: 'rect', height: '4', width: '6', y: '11', x: '15', fill: '#ffaaaa' }
+				{ type: 'rect', height: '3', width: '9.6', y: '2', x: '7', fill: '#ffaaaa' },
+				{ type: 'rect', height: '2', width: '3', y: '5', x: '7', fill: '#ffaaaa' },
+				{ type: 'rect', height: '2', width: '3', y: '5', x: '13.6', fill: '#ffaaaa' },
 			]
 		},
 		{
 			id: 'ht',
 			name: 'Heavy Tank',
 			shapes: [
-				{ type: 'rect', height: '9', width: '21', y: '3', x: '0', fill: '#ff6666' },
-				{ type: 'rect', height: '4', width: '6', y: '11', x: '0', fill: '#ff6666' },
-				{ type: 'rect', height: '4', width: '6', y: '11', x: '15', fill: '#ff6666' },
-				{ type: 'rect', height: '4', width: '7', y: '0', x: '7', fill: '#ff6666' }
+				{ type: 'rect', height: '3', width: '9.6', y: '3', x: '7', fill: '#ff6666' },
+				{ type: 'rect', height: '2', width: '2.74', y: '6', x: '7', fill: '#ff6666' },
+				{ type: 'rect', height: '2', width: '2.74', y: '6', x: '13.85', fill: '#ff6666' },
+				{ type: 'rect', height: '3', width: '4.1', y: '0', x: '9.75', fill: '#ff6666' }
 			]
 		},
 		{
 			id: 'td',
 			name: 'Tank Destroyer',
 			shapes: [
-				{ type: 'rect', height: '5', width: '21', y: '10', x: '0', fill: '#bde9b5' },
-				{ type: 'line', y2: '10', x2: '0', y1: '0', x1: '21', 'stroke-width': '3', stroke: '#bde9b5' }
+				{ type: 'rect', height: '3', width: '9.6', y: '5', x: '7', fill: '#bde9b5' },
+				{ type: 'line', y2: '5.75', x2: '7.6', y1: '-0.5', x1: '16.3', 'stroke-width': '2', stroke: '#bde9b5' }
 			]
 		},
 		{
 			id: 'spaa',
 			name: 'Self Propelled Anti-Air',
 			shapes: [
-				{ type: 'rect', height: '5', width: '21', y: '10', x: '0', fill: '#c6a0ff' },
-				{ type: 'rect', height: '11', width: '4', y: '0', x: '4', fill: '#c6a0ff' },
-				{ type: 'rect', height: '11', width: '4', y: '0', x: '13', fill: '#c6a0ff' }
+				{ type: 'rect', height: '3', width: '9.6', y: '6', x: '7', fill: '#c6a0ff' },
+				{ type: 'rect', height: '6', width: '1.8', y: '0', x: '8.8', fill: '#c6a0ff' },
+				{ type: 'rect', height: '6', width: '1.8', y: '0', x: '13', fill: '#c6a0ff' }
 			]
 		},
 		{
 			id: 'fighter',
 			name: 'Fighter',
 			shapes: [
-				{ type: 'path', d: 'm0,7.5l10.5,-7.5l10.5,7.5l-10.5,7.5l-10.5,-7.5z', fill: '#ffac6f' }
+				{ type: 'path', d: 'm8,4.5l4.5,-4.5l4.5,4.5l-4.5,4.5l-4.5,-4.5z', fill: '#ffac6f' }
 			]
 		},
 		{
 			id: 'attacker',
 			name: 'Attacker',
 			shapes: [
-				{ type: 'path', d: 'm0,7.5l10.5,-5l10.5,5l-10.5,5l-10.5,-5z', fill: '#bde9b5' }
+				{ type: 'path', d: 'm6,4.5l6.3,-3l6.3,3l-6.3,3l-6.3,-3z', fill: '#bde9b5' }
 			]
 		},
 		{
 			id: 'bomber',
 			name: 'Bomber',
 			shapes: [
-				{ type: 'rect', height: '7.5', width: '21', y: '0', x: '0', fill: '#a3b1ff' },
-				{ type: 'path', d: 'm0,7.5l10.5,-7.5l10.5,7.5l-10.5,7.5l-10.5,-7.5z', fill: '#a3b1ff' }
+				{ type: 'rect', height: '4', width: '9', y: '-1', x: '8', fill: '#a3b1ff' },
+				{ type: 'path', d: 'm8,3.5l4.5,-4.5l4.5,4.5l-4.5,4.5l-4.5,-4.5z', fill: '#a3b1ff' }
 			]
 		},
 		{
 			id: 'ahel',
 			name: 'Attack Helicopter',
 			shapes: [
-				{ type: 'path', d: 'm0,7.5l10.5,-5l10.5,5l-10.5,5l-10.5,-5z', fill: '#f2f266' }
+				{ type: 'path', d: 'm6,4.5l6.3,-3l6.3,3l-6.3,3l-6.3,-3z', fill: '#f2f266' }
 			]
 		},
 		{
 			id: 'uhel',
 			name: 'Utility Helicopter',
 			shapes: [
-				{ type: 'rect', height: '7.5', width: '21', y: '0', x: '0', fill: '#9bf266' },
-				{ type: 'path', d: 'm0,7.5l10.5,-7.5l10.5,7.5l-10.5,7.5l-10.5,-7.5z', fill: '#9bf266' }
+				{ type: 'rect', height: '4', width: '9', y: '-1', x: '8', fill: '#9bf266' },
+				{ type: 'path', d: 'm8,3.5l4.5,-4.5l4.5,4.5l-4.5,4.5l-4.5,-4.5z', fill: '#9bf266' }
 			]
 		},
 		{
@@ -163,7 +163,7 @@
 		menuVisible: true,
 		screenshotMode: false,
 		thumbnailStyle: '0',
-		badgeStyle: '0'
+		badgeStyle: '1'
 	};
 
 	init();
@@ -436,7 +436,7 @@
 						settings.menuVisible = loadedData.settings.menuVisible ?? true;
 						settings.screenshotMode = loadedData.settings.screenshotMode ?? false;
 						settings.thumbnailStyle = loadedData.settings.thumbnailStyle ?? '0';
-						settings.badgeStyle = loadedData.settings.badgeStyle ?? '0';
+						settings.badgeStyle = loadedData.settings.badgeStyle ?? '1';
 
 						updateMenuDisplay();
 						document.querySelector( '#settingsModal input[name="screenshotMode"]' ).checked = settings.screenshotMode;
@@ -446,7 +446,7 @@
 						settings.menuVisible = true;
 						settings.screenshotMode = false;
 						settings.thumbnailStyle = '0';
-						settings.badgeStyle = '0';
+						settings.badgeStyle = '1';
 					}
 
 					localStorage.setItem( 'settings', JSON.stringify( settings ) );
@@ -893,7 +893,7 @@
 			const rankNumDiv = document.createElement( 'div' );
 			rankNumDiv.classList.add( 'rankNumber' );
 			const rankNumDivText = document.createElement( 'div' );
-			rankNumDivText.innerHTML = `Rank <b>${ romanize( rank ) }</b>`;
+			rankNumDivText.innerHTML = `Rank <span>${ romanize( rank ) }</span>`;
 			rankNumDivText.classList.add( 'rankNumberText' );
 			rankNumDiv.appendChild( rankNumDivText );
 			rankDiv.appendChild( rankNumDiv );
@@ -1133,7 +1133,7 @@
 		let img = '';
 		const imgStyle = {
 			0: 'max-height: 70%; max-width: 80%',
-			1: 'max-height: 90%; max-width: 90%; position: absolute; bottom: 3px; left: 3px',
+			1: 'max-height: 90%; max-width: 90%; top: 2px; left: 3px;',
 			2: 'height: 100%; width: 100%'
 		}[ settings.thumbnailStyle ];
 		if ( vehicle.thumbnail !== undefined ) img = `<img src="${ vehicle.thumbnail }" style="${ imgStyle }">`;
@@ -1142,7 +1142,8 @@
 			svg = createSvg( classIcons.find( classIcon => classIcon.id === vehicle.classIcon ) );
 		}
 		let brLabel = '';
-		if ( vehicle.type === 'reserve' ) brLabel = `<i>Reserve</i> (${ vehicle.br.toFixed( 1 ) })`;
+		if ( vehicle.type === 'reserve' && vehicle.br == 1 ) brLabel = `<span>Reserve</span>`;
+		else if ( vehicle.type === 'reserve' && vehicle.br != 1 ) brLabel = `<span>Reserve</span> (${ vehicle.br.toFixed( 1 ) })`;
 		else brLabel = vehicle.br.toFixed( 1 );
 		let branchLine = '';
 		if ( [ 'researchable', 'reserve' ].includes( vehicle.type ) ) branchLine = `badgeLine_${ vehicle.branch }`;
@@ -1160,7 +1161,7 @@ class="vehicleBadge type_${ vehicle.type } ${ branchLine }
 connected_${ vehicle.connection }"
 style="position:relative; ${ isClickable( vehicle ) ? 'cursor:pointer;' : '' }">
 <span class="vehicleName">${ vehicle.name }</span>
-<b class="vehicleBr">${ brLabel }</b>
+<span class="vehicleBr">${ brLabel }</span>
 ${ img }
 ${ svg }
 </td>
