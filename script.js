@@ -1174,6 +1174,15 @@ ${ svg }
 		if ( settings.badgeStyle === '1' ) div.classList.add( 'faithful' );
 		return div;
 	}
+	document.addEventListener('DOMContentLoaded', function() {
+		var spans = document.querySelectorAll('.vehicleName');
+
+		spans.forEach(function(span) {
+		  if (span.scrollWidth > 140) {
+			span.classList.add('marquee');
+		  }
+		});
+	});
 	function createFolder ( folder ) {
 		const folderDiv = document.createElement( 'div' );
 		const tooltipText = document.createElement( 'span' );

@@ -297,12 +297,11 @@ a {
 .vehicleName {
 	z-index: 1;
 	text-shadow: 0px 0px 11px #000000;
-	max-width: 140px;
 	position: absolute;
 	top: 3px;
 	font-size: 1rem;
-	/* white-space: nowrap;
-  	overflow: hidden; */
+	white-space: nowrap;
+    display: inline-block;
 }
 
 .faithful .vehicleName {
@@ -351,10 +350,18 @@ a {
 }
 
 .vehicleBadge {
-	width: 150px;
-	height: 50px;
+    width: 150px;
+    height: 50px;
+    padding-left: 7px;
+    padding-right: 7px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
+.vehicleBadge:hover {
+	outline: 2px solid #ffd453;
+}
+ 
 .vehicleBadge svg {
 	position: absolute;
 	bottom: 19px;
@@ -367,6 +374,29 @@ a {
 .faithful .vehicleBadge svg {
 	bottom: 4px;
 }
+
+.marquee {
+    animation: marquee 5s linear forwards;
+    animation-play-state: paused;
+  }
+  
+  td:hover .marquee {
+    animation-play-state: running;
+  }
+
+  td:not(:hover) .marquee {
+    animation: none;
+	transform: translateX(10.5%);
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(10%);
+    }
+    100% {
+      transform: translateX(calc(-100% + 140px));
+    }
+  }
 
 /*.fillerDiv {}*/
 
