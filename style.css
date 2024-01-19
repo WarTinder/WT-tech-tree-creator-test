@@ -296,7 +296,7 @@ a {
 
 .vehicleName {
 	z-index: 1;
-	text-shadow: 0px 0px 11px #000000;
+	/* text-shadow: 0px 0px 11px #000000; */
 	position: absolute;
 	top: 3px;
 	font-size: 1rem;
@@ -307,7 +307,13 @@ a {
 .faithful .vehicleName {
 	left: initial;
 	right: 7px;
-	text-align: right;
+	text-align: left;
+}
+
+.faithful .marquee {
+	left: 7px;
+	right: initial;
+	text-align: left;
 }
 
 .vehicleBr {
@@ -376,27 +382,27 @@ a {
 }
 
 .marquee {
-    animation: marquee 5s linear forwards;
+    animation: marquee 2s linear forwards;
     animation-play-state: paused;
   }
   
-  td:hover .marquee {
+td:hover .marquee {
     animation-play-state: running;
-  }
+}
 
-  td:not(:hover) .marquee {
+td:not(:hover) .marquee {
     animation: none;
-	transform: translateX(10.5%);
-  }
+}
 
-  @keyframes marquee {
+@keyframes marquee {
     0% {
-      transform: translateX(10%);
+      	transform: translateX(0%);
     }
     100% {
-      transform: translateX(calc(-100% + 140px));
+		/* left: 7px; */
+      	transform: translateX(calc(-100% + 140px));
     }
-  }
+}
 
 /*.fillerDiv {}*/
 
