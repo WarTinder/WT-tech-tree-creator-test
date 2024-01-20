@@ -99,6 +99,16 @@ function createHtmlContent ( data ) {
 
         document.querySelector( '#techTree' ).addEventListener( 'click', techTreeClickProcessor );
 
+        document.addEventListener('DOMContentLoaded', function() {
+            var spans = document.querySelectorAll('.vehicleName');
+        
+            spans.forEach(function(span) {
+              if (span.scrollWidth > 140) {
+                span.classList.add('marquee');
+              }
+            });
+        });
+
         ${ data.functions.map( fn => fn.toString() ).join( ';' ) }
     </script>
 </html>

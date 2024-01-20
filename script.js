@@ -1148,43 +1148,43 @@
 		let branchLine = '';
 		if ( [ 'researchable', 'reserve' ].includes( vehicle.type ) ) branchLine = `badgeLine_${ vehicle.branch }`;
 		else branchLine = `badgeLine_premium_${ vehicle.branch }`;
-		document.addEventListener('DOMContentLoaded', function() {
-			var spans = document.querySelectorAll('.vehicleName');
-		
-			spans.forEach(function(span) {
-			  if (span.scrollWidth > 140) {
-				span.classList.add('marquee');
-			  }
-			});
-		});
 		div.innerHTML = `<table>
-<tbody>
-<tr>
-<td rowspan="3" class="badgeSide"></td>
-<td class="badgeLine ${ branchLine }"></td>
-<td rowspan="3" class="badgeSide"></td>
-</tr>
-<tr>
-<div id="vehicleBadgeWrapper">
-<td id="${ vehicle.id }"
-class="vehicleBadge type_${ vehicle.type } ${ branchLine }
-connected_${ vehicle.connection }"
-style="position:relative; ${ isClickable( vehicle ) ? 'cursor:pointer;' : '' }">
-<span class="vehicleName">${ vehicle.name }</span>
-<span class="vehicleBr">${ brLabel }</span>
-${ img }
-${ svg }
-</td>
-</div>
-</tr>
-<tr>
-<td class="badgeLine ${ branchLine }"></td>
-</tr>
-</tbody>
-</table>`;
+		<tbody>
+		<tr>
+		<td rowspan="3" class="badgeSide"></td>
+		<td class="badgeLine ${ branchLine }"></td>
+		<td rowspan="3" class="badgeSide"></td>
+		</tr>
+		<tr>
+		<div id="vehicleBadgeWrapper">
+		<td id="${ vehicle.id }"
+		class="vehicleBadge type_${ vehicle.type } ${ branchLine }
+		connected_${ vehicle.connection }"
+		style="position:relative; ${ isClickable( vehicle ) ? 'cursor:pointer;' : '' }">
+		<span class="vehicleName">${ vehicle.name }</span>
+		<span class="vehicleBr">${ brLabel }</span>
+		${ img }
+		${ svg }
+		</td>
+		</div>
+		</tr>
+		<tr>
+		<td class="badgeLine ${ branchLine }"></td>
+		</tr>
+		</tbody>
+		</table>`;
 		if ( settings.badgeStyle === '1' ) div.classList.add( 'faithful' );
 		return div;
 	}
+	document.addEventListener('DOMContentLoaded', function() {
+		var spans = document.querySelectorAll('.vehicleName');
+	
+		spans.forEach(function(span) {
+		  if (span.scrollWidth > 140) {
+			span.classList.add('marquee');
+		  }
+		});
+	});
 	function createFolder ( folder ) {
 		const folderDiv = document.createElement( 'div' );
 		const tooltipText = document.createElement( 'span' );
