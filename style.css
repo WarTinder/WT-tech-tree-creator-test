@@ -360,7 +360,7 @@ a {
     height: 50px;
     padding-left: 7px;
     padding-right: 7px;
-    overflow: hidden;
+    overflow-x: hidden;
     white-space: nowrap;
 }
 
