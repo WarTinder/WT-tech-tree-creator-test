@@ -64,6 +64,17 @@ function createHtmlContent ( data ) {
                 <div class="modal-body" id="modalDesc"></div>
             </div>
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var spans = document.querySelectorAll('.vehicleName');
+            
+                spans.forEach(function(span) {
+                if (span.scrollWidth > 140) {
+                    span.classList.add('marquee');
+                }
+                });
+            });
+        </script>
     </body>
     <style>${ data.styles }</style>
     <script
@@ -98,16 +109,6 @@ function createHtmlContent ( data ) {
         }
 
         document.querySelector( '#techTree' ).addEventListener( 'click', techTreeClickProcessor );
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var spans = document.querySelectorAll('.vehicleName');
-        
-            spans.forEach(function(span) {
-              if (span.scrollWidth > 140) {
-                span.classList.add('marquee');
-              }
-            });
-        });
 
         ${ data.functions.map( fn => fn.toString() ).join( ';' ) }
     </script>
