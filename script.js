@@ -1156,7 +1156,6 @@
 		<td rowspan="3" class="badgeSide"></td>
 		</tr>
 		<tr>
-		<div id="vehicleBadgeWrapper">
 		<td id="${ vehicle.id }"
 		class="vehicleBadge type_${ vehicle.type } ${ branchLine }
 		connected_${ vehicle.connection }"
@@ -1166,7 +1165,6 @@
 		${ img }
 		${ svg }
 		</td>
-		</div>
 		</tr>
 		<tr>
 		<td class="badgeLine ${ branchLine }"></td>
